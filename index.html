@@ -5,6 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="site.css" />
   <title>STAY CONFORT</title>
+  <style>
+    /* Reset brabo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+  line-height: 1.6;
+  padding: 40px 20px;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #111;
+  letter-spacing: -1px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Grid dos produtos */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cartões dos produtos */
+.item {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  color: #999;
+}
+  </style>
 </head>
 <body>
   <header>
@@ -16,7 +119,7 @@
     <!-- Produto 1 -->
     <div class="item">
       <div class="product">
-        <img src="https://imgs.search.brave.com/UneeoaWbpeBYYvwxmuPtkwB2uCgFlyd8Dif9WdAOg_0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTIv/NjU1LzM5OS9zbWFs/bC93aGl0ZS10LXNo/aXJ0LW9uLW5ldXRy/YWwtYmFja2dyb3Vu/ZC1wbmcucG5n" alt="Camiseta Ultra Confort" />
+        <img src="https://imgs.search.brave.com/rqacjD8B013EUQFphotQmMP9R3NrDqMU6AOMzAllq4s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYXJ0cy5jb20v/ZmlsZXMvNS9QbGFp/bi1XaGl0ZS1ULVNo/aXJ0LVBORy1JbWFn/ZS1CYWNrZ3JvdW5k/LnBuZw" alt="Camiseta Ultra Confort" />
       </div>
       <h3>Camiseta Ultra Confort</h3>
       <span>R$199,90</span>
@@ -49,3 +152,4 @@
   </footer>
 </body>
 </html>
+
